@@ -9,7 +9,7 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
   include(AddLLVM)
   include(HandleLLVMOptions)
 
-  include_directories("${LLVM_BINARY_DIR}/include" "${LLVM_INCLUDE_DIR}")
+  include_directories("${LLVM_BINARY_DIR}/include" "${LLVM_INCLUDE_DIRS}")
   link_directories("${LLVM_LIBRARY_DIR}")
 
   set(TINYLANG_BUILT_STANDALONE 1)
